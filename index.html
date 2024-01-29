@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>SAV SURVEY FORM</title>
+  </head>
+  <body>
+    <h1 id="title">SAVARIA SURVEY FORM</h1>
+    <p id="description">Please fill out this survey form and help us improve.</p>
+    <form id="survey-form">
+      <fieldset>
+          <label for="name" id="name-label">NAME:
+            <input id="name" type="text" required placeholder="Enter your full name">
+          </label><br>
+          <label for="email" id="email-label">EMAIL ADDRESS:
+            <input id="email" type="email" required placeholder="Enter your email">
+          </label><br>
+          <label for="number" id="number-label">PHONE NUMBER:
+            <input id="number" type="number" required placeholder="Enter your phone number" min="0000011111" max="9999999999"> 
+          </label><br>
+          <label for="age" id="age-label">AGE:
+            <input id="age" type="number" required placeholder="Enter your age" min="13" max="120">
+            </label><br><hr>
+      </fieldset>   
+      <fieldset>
+        <legend>Educational Status</legend>
+          <label for="UG">
+            <input id="UG" type="radio" name="M-S" value="Undergrad" checked> Undergraduate
+          </label><br>
+          <label for="GD">
+            <input id="GD" type="radio" name="M-S" value="Grad"> Graduate
+          </label><br>
+          <label for="MS">
+            <input id="MS" type="radio" name="M-S" value="Master"> Masters/PhD
+          </label><br><br>
+          <label  for="dropdown">What best describes you
+            <select id="dropdown"> 
+              <option value="">Select an option</option>
+              <option value="1">Student</option>
+              <option value="2">Professor</option>
+              <option value="3">Employer</option>
+              <option value-"4">Other</option>
+            </select>
+          </label><br><br><hr>
+          <label for="pp">
+            <input id="pp" type="checkbox" value="privacy" required> Privacy Policy
+          </label><br>
+          <label for="tc">
+            <input id="tc" type="checkbox" value="terms" required> Terms and Conditions
+          </label><br>
+          <label for="nl">
+            <input id="nl" type="checkbox" value="news"> Subscribe to Newsletter
+          </label><br><hr>
+          <label for="txt">Comments:            
+          <textarea id="txt" placeholder="Any additional information or query"></textarea>
+          </label>
+      </fieldset>
+      <input id="submit" type="submit" value="submit">
+    </form>
+  </body>
+</html>
